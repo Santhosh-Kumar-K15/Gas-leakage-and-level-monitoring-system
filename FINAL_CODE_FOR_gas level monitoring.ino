@@ -2,9 +2,10 @@
 #include "HX711.h"
 #include <BlynkSimpleEsp8266.h>
 
+//Enter auth,ssid and pass according to your project
 char auth[] = "AxapiQSfhBFIOFC4IsChvfSMWWAmDiqi";
-char ssid[] = "Sandy vivo";
-char pass[] = "SANDYMASK";
+char ssid[] = "******";
+char pass[] = "******";
 
 // HX711 circuit wiring
 const int LOADCELL_DOUT_PIN = 12;
@@ -68,12 +69,9 @@ void loop() {
        Blynk.notify("book your gas cylinder");
        delay(1000); 
   }
-  
-  
   Blynk.virtualWrite(V1,scale.read());
   Blynk.run();
-
-
+  
   scale.power_down();            
   delay(5000);
   scale.power_up();
