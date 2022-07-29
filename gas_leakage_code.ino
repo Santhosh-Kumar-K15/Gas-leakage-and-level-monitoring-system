@@ -2,9 +2,10 @@
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
+//Enter auth , ssid and pass according to your project
 char auth[] = "guqFsG2lNQL7IeJdUfob2mMKoJXb_JFk";
-char ssid[] = "Sandy vivo";
-char pass[] = "SANDYMASK";
+char ssid[] = "*****";
+char pass[] = "*****";
 
 
 const int buzzer = 2;
@@ -34,8 +35,8 @@ void loop() {
  }
 // else
 // {
-//    //noTone(buzzer);
-//    //digitalWrite(buzzer,LOW);
+//    noTone(buzzer);
+//    digitalWrite(buzzer,LOW);
 // }
  delay(1000);
 }
